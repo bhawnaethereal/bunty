@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bounty Game </title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="navbar">
+  <div style="display:flex;align-items:center;">
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="logo">
+      <img src="img/buntylogo.png" alt="Bounty Game Logo">
+    </div>
+  </div>
+
+  <nav>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#">About</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle">Games ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Game 1</a></li>
+          <li><a href="#">Game 2</a></li>
+        </ul>
+      </li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="download-btn">
+    <a href="#">Download for Free ▾</a>
+  </div>
+</header>
+
+<section class="bounty-hero">
+  <div class="hero-content">
+    <img src="img/Bounty-Game-3.webp" alt="Bounty Arena" class="hero-img">
+    <h1 class="game-title">BOUNTY <span>Game</span></h1>
+    <h3 class="tagline">DOMINATE THE HUNT. NEW SEASON BEGINS AUGUST 10TH.</h3>
+    <a href="#" class="hero-btn">Watch Gameplay Trailer</a>
+  </div>
+</section>
+
+
+<div class="card">
+  <div class="card-content">
+    <h2>PLAY BIG, PLAY LOUD IN WILDCARD</h2>
+    <p>The new permanent game mode with faster gameplay, loot explosions, and second chances to help you turn the tide and clutch the win.<br><br>
+    Stack your squad with up to 3 identical Legends and drop into a remixed Kings Canyon packed with gravity cannons, ziplines, and other map toys.</p>
+    <button>Go Wild</button>
+  </div>
+  <div class="card-image">
+    <img src="img/1.avif" alt="Game Image">
+  </div>
+</div>
+
+<div class="section">
+  <div class="overlay">
+    <img src="img/2.avif" alt="Character">
+    <div class="content">
+      <h2>AIR QUALITY WARNING</h2>
+      <p>Hold your breath, new Caustic and Bangalore buffs just dropped.<br><br>
+      Caustic’s gas traps are tougher, more lethal, have a wider radius. Bangalore’s smoke gets an offensive boost—it now breaches doors and can be upgraded to shock enemies and destroy traps.</p>
+      <button>Don't Breathe</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="card-content">
+    <h2>PLAY BIG, PLAY LOUD IN WILDCARD</h2>
+    <p>The new permanent game mode with faster gameplay, loot explosions, and second chances to help you turn the tide and clutch the win.<br><br>
+    Stack your squad with up to 3 identical Legends and drop into a remixed Kings Canyon packed with gravity cannons, ziplines, and other map toys.</p>
+    <button>Go Wild</button>
+  </div>
+  <div class="card-image">
+    <img src="img/1.avif" alt="Game Image">
+  </div>
+</div>
+
+<div class="section">
+  <div class="overlay">
+    <img src="img/2.avif" alt="Character">
+    <div class="content">
+      <h2>AIR QUALITY WARNING</h2>
+      <p>Hold your breath, new Caustic and Bangalore buffs just dropped.<br><br>
+      Caustic’s gas traps are tougher, more lethal, have a wider radius. Bangalore’s smoke gets an offensive boost—it now breaches doors and can be upgraded to shock enemies and destroy traps.</p>
+      <button>Don't Breathe</button>
+    </div>
+  </div>
+</div>
+
+
+
+<footer class="footer">
+  <div class="social-icons">
+    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+  </div>
+
+  <div class="footer-logos">
+    <img src="img/buntylogo.png" alt="EA Logo">
+  </div>
+
+  <nav class="footer-links">
+    <a href="#">Home</a>
+    <a href="#">Download</a>
+    <a href="#">News</a>
+    <a href="#">EA app for Windows</a>
+    <a href="#">EA app for Mac</a>
+    <a href="#">Shooter</a>
+  </nav>
+</footer>
+
+
+
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
+
+dropdownToggles.forEach(toggle => {
+  toggle.addEventListener('click', (e) => {
+    e.preventDefault();
+    const parent = toggle.parentElement;
+    parent.classList.toggle('open');
+  });
+});
+</script>
+<script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+</body>
+</html>
